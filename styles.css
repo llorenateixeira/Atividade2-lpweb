@@ -1,0 +1,149 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header .hero {
+    margin-top: 30px;
+  }
+  
+  header .hero h1 {
+    font-size: 3em;
+  }
+  
+  header .hero button {
+    background-color: #00aaff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Seção de Introdução */
+  .introducao {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .introducao h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .introducao .imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .introducao .imagens img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Seção de Serviços */
+  .servicos {
+    padding: 50px 20px;
+    background-color: #eeeeee;
+    text-align: center;
+  }
+  
+  .servicos h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .servicos .servico {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .servicos .servico h3 {
+    font-size: 1.8em;
+  }
+  
+  /* Seção de Depoimentos */
+  .depoimentos {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .depoimentos h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .depoimentos .depoimento {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+  }
+  
+  .depoimentos .depoimento img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .depoimentos .depoimento p {
+    margin-top: 10px;
+    font-size: 1.1em;
+  }
+  
+  .depoimentos .depoimento strong {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
