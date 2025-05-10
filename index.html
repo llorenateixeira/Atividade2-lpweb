@@ -1,80 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viagens Incríveis</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!-- Cabeçalho -->
-  <header>
+  <header class="topo">
     <nav>
       <ul>
         <li><a href="#">Realizando Sonhos</a></li>
         <li><a href="#">Nossa História</a></li>
         <li><a href="#">Serviços</a></li>
         <li><a href="#">Testemunhos</a></li>
-        <li><a href="#">Entre em Contato</a></li>
+        <li><a class="btn-contato" href="#">Entre em Contato</a></li>
       </ul>
     </nav>
     <section class="hero">
-      <h1>Viagens Incríveis</h1>
-      <p>Uma experiência única.</p>
-      <button>Comece hoje</button>
+      <div class="overlay">
+        <h1>Viagens Incríveis</h1>
+        <p>Uma experiência única.</p>
+        <p class="sub">Proporcionamos momentos incríveis que inspiram você a ser você.</p>
+        <button>Comece hoje</button>
+      </div>
     </section>
   </header>
 
   <!-- Seção de Introdução -->
   <section class="introducao">
-    <h2>A primeira viagem que planejamos foi a nossa</h2>
-    <p>Desde então, proporcionamos a melhor experiência de viagens para todos.</p>
-    <div class="imagens">
-      <img src="image1.jpg" alt="Casal de mãos dadas">
-      <img src="image2.jpg" alt="Mulher sorrindo">
+    <h2>A primeira viagem que planejamos <strong>foi a nossa</strong></h2>
+    <p class="destaque">Desde então, proporcionamos a melhor experiência de <span>viagens para todos.</span></p>
+    <div class="imagens-texto">
+      <div class="coluna-esquerda">
+        <img class="img-casal" src="./imagens-da-pagina/primeira-viagem.jpg" alt="Casal de mãos dadas">
+        <img class="img-retrato" src="./imagens-da-pagina/como-comecou-portrait.jpg" alt="Mulher sorrindo">
+      </div>
+      <div class="coluna-direita">
+        <h3>Veja como tudo começou ...</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </span>
+          quisquam voluptatibus eum fuga cupiditate veritatis eaque, aliquam odit quos. Delectus repellendus error id
+          aliquid numquam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem totam, sit quis adipisci,
+          earum dignissimos cupiditate inventore tempora saepe ut blanditiis quisquam sed. 
+          Nemo sed quaerat cupiditate,
+          nostrum deserunt inventore?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel
+          exercitationem aliquid animi, accusantium adipisci eius explicabo officiis. Porro repellat distinctio aliquam
+          ea alias quos praesentium ipsum ipsam quaerat esse!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ducimus neque, recusandae minus mollitia, odit reprehenderit aliquid assumenda quia nesciunt perferendis veritatis inventore! Tempora exercitationem atque, magni voluptates excepturi rerum.</p>
+      </div>
     </div>
   </section>
 
   <!-- Seção de Serviços -->
   <section class="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="servico">
-      <h3>Veja a previsão do tempo</h3>
-      <p>Baixe nosso aplicativo e vamos enviar-lhe um aviso de chuva próxima.</p>
-    </div>
-    <div class="servico">
-      <h3>Wi-Fi Zone</h3>
-      <p>Priorize seus momentos com internet nos melhores destinos.</p>
-    </div>
-    <div class="servico">
-      <h3>Kit de sobrevivência</h3>
-      <p>Reserve um kit de sobrevivência e viaje preparado para qualquer situação.</p>
+    <h2><span class="estrela">★</span> Nossos <strong>Serviços</strong></h2>
+
+    <div class="grid-servicos">
+      <div class="servico">
+        <img src="./imagens-da-pagina/icone-clima.svg" alt="Previsão do tempo">
+        <div class="conteudo-texto">
+        <h3>Veja a previsão do tempo</h3>
+        <p>Baixe nosso aplicativo e vamos enviar-lhe um aviso Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero numquam commodi provident assumenda, quia accusamus asperiores? Quam, dolorum ut. Culpa rem nesciunt quisquam! Placeat voluptate deserunt nobis. Voluptatem, fuga quo?</p>  
+        </div>
+      </div>
+      <div class="servico">
+        <img src="./imagens-da-pagina/icone-wifi.svg" alt="Wi-Fi Zone">
+        <div class="conteudo-texto">
+        <h3>Wi-Fi Zone</h3>
+        <p>Nós priorizamos viagens para lugares com Wi-Fi disponível. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fuga maiores, ipsam magnam illum ullam accusamus, sint soluta, ducimus impedit quos! Quas in voluptate vero atque, recusandae perferendis odit neque!</p> 
+        </div>
+        
+      </div>
+      <div class="servico">
+        <img src="./imagens-da-pagina/icone-guia.svg" alt="Guia Incrível">
+        <div class="conteudo-texto">
+        <h3>Guia Incrível</h3>
+        <p>Já percorremos os cantos do planeta com os melhores destinos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae explicabo ipsa, laudantium voluptate atque officiis omnis aliquid debitis magnam pariatur corrupti minima ullam labore libero sapiente. Officia, iure asperiores.</p>  
+        </div>
+      </div>
+      <div class="servico">
+        <img src="./imagens-da-pagina/icone-kit.svg" alt="Kit de sobrevivência">
+        <div class="conteudo-texto">
+        <h3>Kit de sobrevivência</h3>
+        <p>Enviamos um kit de sobrevivência com os melhores materiais. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, eos corrupti veniam libero molestiae asperiores adipisci ullam hic repellat vitae magni nam ut, incidunt ad cupiditate neque maxime autem eaque!</p>  
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Seção de Depoimentos -->
   <section class="depoimentos">
-    <h2>Depoimentos Reais</h2>
-    <div class="depoimento">
-      <img src="renata.jpg" alt="Renata Vasconcelos">
-      <p>"Duis aute irure dolor in reprehenderit..."</p>
-      <p><strong>Renata Vasconcelos</strong> - 9 Viagens</p>
-    </div>
-    <div class="depoimento">
-      <img src="joao.jpg" alt="João Pedro">
-      <p>"Duis aute irure dolor in reprehenderit..."</p>
-      <p><strong>João Pedro</strong> - 4 Viagens</p>
-    </div>
-    <div class="depoimento">
-      <img src="gata.jpg" alt="Gata Mimi">
-      <p>"Duis aute irure dolor in reprehenderit..."</p>
-      <p><strong>Gata Mimi</strong> - 6 Viagens</p>
+    <h2><span>Depoimentos</span> Reais</h2>
+    <div class="grid-depoimentos">
+      <div class="depoimento">
+        <img src="./imagens-da-pagina/testemunha-renata.jpg" alt="Renata Vasconcelos">
+        <h4>Renata Vasconcelos</h4>
+        <p class="viagens">9 Viagens</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quia sapiente doloremque est
+          voluptatem, porro exercitationem dicta unde. Dolore expedita provident vitae porro omnis aliquam perspiciatis
+          repellendus, corrupti repudiandae suscipit.</p>
+      </div>
+      <div class="depoimento">
+        <img src="./imagens-da-pagina/testemunha-joao.jpg" alt="João Pedro">
+        <h4>João Pedro</h4>
+        <p class="viagens">4 Viagens</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit quos vel aperiam, error iste molestias laborum
+          quam tenetur quasi! Hic suscipit temporibus libero quae deleniti autem ipsum, ipsam cum. Omnis?</p>
+      </div>
+      <div class="depoimento">
+        <img src="./imagens-da-pagina/testemunha-cat.jpg" alt="Gata Mimi">
+        <h4>Gata Mimi</h4>
+        <p class="viagens">6 Viagens</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae labore officia reiciendis adipisci.
+          Perspiciatis tempore optio voluptatem distinctio provident assumenda maiores, molestias molestiae! Ratione
+          reiciendis quae suscipit beatae nisi praesentium.</p>
+      </div>
     </div>
   </section>
 
   <!-- Rodapé -->
   <footer>
     <p>&copy; 2017 Todos os direitos reservados.</p>
+    <button>Entre em Contato</button>
   </footer>
 </body>
+
 </html>

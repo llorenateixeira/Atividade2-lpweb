@@ -1,149 +1,346 @@
-/* Resetando estilos padrão */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  color: #2f4a66;
+}
+
+/* Cabeçalho */
+header nav {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+header nav ul li:first-child a {
+  background-color: #2f4a66;
+}
+
+header nav ul li:last-child a {
+  background-color: #19476e;
+}
+
+/* Hero Section */
+.hero {
+  background: url('./imagens-da-pagina/paisagem--large.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  color: #2f4a66;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-image: url('background.jpg');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
-  }
-  
-  header nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-  }
-  
-  header nav ul li {
-    margin: 0 15px;
-  }
-  
-  header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  header .hero {
-    margin-top: 30px;
-  }
-  
-  header .hero h1 {
-    font-size: 3em;
-  }
-  
-  header .hero button {
-    background-color: #00aaff;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 1.2em;
-    cursor: pointer;
-    margin-top: 20px;
-  }
-  
-  /* Seção de Introdução */
-  .introducao {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  .introducao h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  .introducao .imagens {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .introducao .imagens img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  /* Seção de Serviços */
-  .servicos {
-    padding: 50px 20px;
-    background-color: #eeeeee;
-    text-align: center;
-  }
-  
-  .servicos h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-  }
-  
-  .servicos .servico {
-    background-color: #fff;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .servicos .servico h3 {
-    font-size: 1.8em;
-  }
-  
-  /* Seção de Depoimentos */
-  .depoimentos {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #fff;
-  }
-  
-  .depoimentos h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-  }
-  
-  .depoimentos .depoimento {
-    display: inline-block;
-    width: 30%;
-    margin: 20px;
-  }
-  
-  .depoimentos .depoimento img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
-  
-  .depoimentos .depoimento p {
-    margin-top: 10px;
-    font-size: 1.1em;
-  }
-  
-  .depoimentos .depoimento strong {
-    display: block;
-    margin-top: 5px;
-  }
-  
-  /* Rodapé */
-  footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-  
+}
+
+.hero .overlay {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero .sub {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.hero button {
+  background-color: #f4a742;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background-color: #d7902f;
+}
+
+
+.introducao {
+  padding: 6rem 2rem 4rem;
+  background-color: white;
+  color: #3a628d;
+  text-align: center;
+}
+
+.introducao h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.introducao strong {
+  color: #2f4a66;
+  font-weight: 600;
+}
+
+.introducao .destaque {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #d6a374;
+  margin-bottom: 3rem;
+}
+
+.introducao .destaque span {
+  color: #cd7b38;
+  font-weight: 600;
+}
+
+
+.imagens-texto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.coluna-esquerda {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.img-casal {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.img-retrato {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  align-self: flex-start;
+}
+
+.coluna-direita {
+  max-width: 700px;
+  flex: 1;
+  margin-left: 180px;
+  margin-top: -440px;
+}
+
+.coluna-direita h3 {
+  font-size: 1.8rem;
+  color: #2f4a66;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.coluna-direita p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.coluna-direita .p span{
+  color: #cd7b38;
+}
+
+.servicos {
+  background-color: #2f4a66;
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.servicos .estrela {
+  color: #f4a742;
+  font-size: 3rem;
+}
+
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.servico {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.servico img {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.servico h3 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem;
+  color: white;
+}
+
+.conteudo-texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.servico p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.depoimentos {
+  background: url('./imagens-da-pagina/testemunha-bg.jpg') no-repeat center center/cover;
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
+  color: #2f4a66;
+}
+
+.depoimentos h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.depoimentos h2 .marca {
+  color: #2f4a66;
+  border-left: 5px solid #2f4a66;
+  padding-left: 10px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.grid-depoimentos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.depoimento {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.depoimento:hover {
+  transform: translateY(-5px);
+}
+
+.depoimento img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.depoimento h4 {
+  margin: 0.5rem 0 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.depoimento .viagens {
+  font-size: 0.85rem;
+  color: #f4a742;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.depoimento p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #2f4a66;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer button {
+  background-color: #f4a742;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
